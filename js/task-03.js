@@ -20,7 +20,7 @@ const imagesEl = (images) => {
 };
 
 const ArrayEl = images.map(imagesEl).join('');
-const makeImagesEl = document.querySelector('body')
-makeImagesEl.insertAdjacentHTML("beforeend", ArrayEl);
+const makeImagesEl = document.querySelector('ul')
+makeImagesEl.insertAdjacentHTML("afterbegin", ArrayEl);
 
 console.log(ArrayEl);
